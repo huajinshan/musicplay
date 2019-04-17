@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+<div class="box">
+    <!--头部-->
+    <header>
+        <div class="container">
+            <h3 class="left">音乐播放器</h3>
+            <p class="right">From:huajin</p>
+        </div>
+    </header>
+    <!--主体-->
+    <section>
+        <div class="container">
+            <div class="fang">
+                <input type="text" class="search">
+            </div>
+            <ul class="searchList">
+
+
+            </ul>
+        </div>
+    </section>
+</div>
+  <footer>
+        <div class="container">
+            <!--控制按钮-->
+            <div class="btns left">
+                <div class="left prev"></div>
+                <div class="left start"></div>
+                <div class="left next"></div>
+            </div>
+            <!--进度条-->
+            <div class="bars left">
+                <div class="left logo">
+                    <img  src="" alt="">
+                </div>
+               <div class="left ctrl-bars-box">
+                   <p>歌曲名 -- 歌手名</p>
+                   <div class="ctrl-bar">
+                       <div class="nowTime"></div>
+                       <div class="ctrl-btn">
+                           <div class="small"></div>
+                       </div>
+                   </div>
+               </div>
+                <div class="left playTime">
+                    <span class="playTimeNow">00:00</span>
+                    /
+                    <span class="playTimeTotal">00:00</span>
+                </div>
+            </div>
+
+            <div class="left modes">
+                <div class="left voice"></div>
+                <div class="left mode"></div>
+                <div class="left list">0</div>
+            </div>
+
+        </div>
+
+  </footer>
+<div class="voice-box">
+    <div class="voice-inbox">
+        <div class="vioce-bar"></div>
+        <div class="voice-yuan1">
+            <div class="voice-yuan2"></div>
+        </div>
+    </div>
+
+</div>
+<div class="play-list">
+    <h3>播放列表</h3>
+    <ul id="myViewMore "></ul>
+</div>
+
+<div class="mode-info"></div>
+<div id='holder'></div>
+
+<audio src=""></audio>
+</body>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src='js/jquery.warpdrive.min.js'></script>
+<script src="js/index.js"></script>
+
+<script>
+
+    $( document ).ready( function() {
+
+
+        var settings = {
+
+            width:window.screen.width,
+            height:window.screen.height,
+            autoResize: false,
+            autoResizeMinWidth: null,
+            autoResizeMaxWidth: null,
+            autoResizeMinHeight: null,
+            autoResizeMaxHeight: null,
+            addMouseControls: true,
+            addTouchControls: true,
+            hideContextMenu: true,
+            starCount: 6666,
+            starBgCount: 2222,
+            starBgColor: { r:255, g:255, b:255 },
+            starBgColorRangeMin: 10,
+            starBgColorRangeMax: 40,
+            starColor: { r:255, g:255, b:255 },
+            starColorRangeMin: 10,
+            starColorRangeMax: 100,
+            starfieldBackgroundColor: { r:0, g:0, b:0 },
+            starDirection: 1,
+            starSpeed: 20,
+            starSpeedMax: 200,
+            starSpeedAnimationDuration: 2,
+            starFov: 300,
+            starFovMin: 200,
+            starFovAnimationDuration: 2,
+            starRotationPermission: true,
+            starRotationDirection: 1,
+            starRotationSpeed: 0.0,
+            starRotationSpeedMax: 1.0,
+            starRotationAnimationDuration: 2,
+            starWarpLineLength: 2.0,
+            starWarpTunnelDiameter: 100,
+            starFollowMouseSensitivity: 0.025,
+            starFollowMouseXAxis: true,
+            starFollowMouseYAxis: true
+
+        };
+
+
+        var warpdrive = new WarpDrive( document.getElementById( 'holder' ) );
+
+    } );
+
+</script>
+</html>
